@@ -1,0 +1,71 @@
+body
+{font-family: 'Roboto', sans-serif;
+}
+
+h4,h1
+{
+font-family: 'Shrikhand', 'cursive';
+}
+
+nav img{
+width:400px;
+object-fit: cover;
+}
+
+.coeur{
+position: absolute;
+left: 380px;
+font-size: 40px;
+color: initial;
+}
+
+.container{
+background-color: #f2f2f2;
+width: 100%;
+padding-bottom: 5%;
+border-radius: 20px 20px 0px 0px;
+padding-top: 1%;
+}
+
+.right{
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+padding-left: 1%;
+margin-left: 1%;
+}
+
+
+h2{
+color: rgb(71, 71, 71);
+font-weight:lighter;
+border-bottom:#068d6b solid 5px;
+width: 2%;
+}
+
+.clique{
+background:linear-gradient(#ff79da, #9356DC);
+width: 80%;
+padding-left: 2%;
+border-radius: 25px;
+padding-bottom: 15px;
+padding-top:15px; 
+margin-top: 3%;      
+}
+
+.clique a{
+text-decoration: none;
+color: white;
+}
+/*Footer*/
+footer {
+color: white;
+background-color: rgb(56, 55, 55);
+padding-bottom: 20px;
+}
+
+
+footer a {
+text-decoration: none;
+color: white;
+
+}
