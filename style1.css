@@ -1,0 +1,50 @@
+body
+{font-family: 'Roboto', sans-serif;
+}
+
+h4,h1
+{
+font-family: 'Shrikhand', 'cursive';
+}
+
+nav img{
+width:400px;
+object-fit: cover;
+}
+
+.coeur{
+position: absolute;
+left: 380px;
+font-size: 40px;
+color: initial;
+}
+
+.container{
+background-color: #f2f2f2;
+width: 100%;
+padding-bottom: 50%;
+border-radius: 20px 20px 0px 0px;
+padding-top: 1%;
+}
+
+h2{
+color: rgb(71, 71, 71);
+font-weight:lighter;
+border-bottom:#068d6b solid 5px;
+width: 2%;
+}
+
+
+/*Footer*/
+footer {
+color: white;
+background-color: rgb(56, 55, 55);
+padding-bottom: 20px;
+
+}
+    
+footer a {
+text-decoration: none;
+color: white;
+
+}
