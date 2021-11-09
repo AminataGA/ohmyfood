@@ -8,14 +8,14 @@ font-family: 'Shrikhand', 'cursive';
 }
 
 nav img{
-width:400px;
+width:100%;
 object-fit: cover;
 }
 
 .coeur{
 position: absolute;
-left: 380px;
-font-size: 40px;
+left: 600px;
+font-size: 50px;
 color: initial;
 }
 
@@ -34,6 +34,70 @@ padding-left: 1%;
 margin-left: 1%;
 }
 
+.right1 a{
+    text-decoration: none;
+    color: initial;
+}
+
+.right1:hover::before{
+background:initial;
+}
+
+.right1:hover{
+background: #99E2D0;
+width: 100px;
+cursor: pointer;
+}
+
+.load{
+animation-duration: 2s;
+animation-name: square;
+animation-direction: normal;
+}
+
+@keyframes square{
+    from {
+     transform: initial;
+      
+    }
+  
+    to {
+       transform: scale(1.5);;
+    }
+  }
+
+  @-webkit-keyframes square {
+    from {
+        transform: initial;
+         
+       }
+     
+       to {
+          transform: scale(1.5);;
+       }
+     }
+
+     @keyframes square {
+        from {
+         transform: initial;
+          
+        }
+      
+        to {
+           transform: scale(1.5);;
+        }
+      }
+    
+      @-webkit-keyframes square {
+        from {
+            transform: initial;
+             
+           }
+         
+           to {
+              transform: scale(1.5);;
+           }
+         }
 
 h2{
 color: rgb(71, 71, 71);
@@ -52,20 +116,35 @@ padding-top:15px;
 margin-top: 3%;      
 }
 
+#commander:hover{
+	filter:  brightness(1.2);
+	box-shadow: 6px 6px 6px grey;
+}
+
 .clique a{
 text-decoration: none;
 color: white;
 }
+
 /*Footer*/
 footer {
 color: white;
 background-color: rgb(56, 55, 55);
-padding-bottom: 20px;
+padding-bottom: 5%;
+padding-left: 5%;
+padding-top: 5%;
 }
 
+h4{
+   padding-bottom: 5%;
+}
 
 footer a {
 text-decoration: none;
 color: white;
 
+}
+
+.espace {
+padding-right: 5%;
 }

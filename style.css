@@ -34,6 +34,9 @@ color: white;
 text-decoration: none;
 }
 
+.right{
+  margin-bottom: 5%;
+}
 .container{
 color:white;
 background:linear-gradient(#ff79da, #9356DC);
@@ -56,13 +59,14 @@ position: fixed;
 top:0; left:0; right:0; bottom:0;
 animation-duration: 2s;
 animation-name: spin;
-  
 }
+
+
 
 @keyframes spin {
     from {
       transform:rotate(0deg);
-      opacity: 1;
+      
     }
   
     to {
@@ -74,6 +78,7 @@ animation-name: spin;
   @-webkit-keyframes spin {
     from {
       -webkit-transform:rotate(0deg);
+      opacity: 1;
     }
   
     to {
@@ -174,9 +179,9 @@ color: initial;
 }
 
 
-.coeur:hover::after{
-background:linear-gradient(#ff79da, #9356DC);
-border-radius: 15px;
+.coeur:hover{
+background:linear-gradient(#ff79da, #9356DC, 20px) ;
+border-radius: 50px;
 }
 
 .nouveau{

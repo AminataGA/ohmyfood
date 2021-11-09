@@ -56,6 +56,7 @@ margin-top: 3%;
 text-decoration: none;
 color: white;
 }
+
 /*Footer*/
 footer {
 color: white;
@@ -68,4 +69,8 @@ footer a {
 text-decoration: none;
 color: white;
 
+}
+
+.espace {
+padding-right: 20px;
 }
