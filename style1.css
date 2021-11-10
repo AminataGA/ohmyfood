@@ -7,10 +7,15 @@ h4,h1
 font-family: 'Shrikhand', 'cursive';
 }
 
+header img{
+padding-left: 30%;
+}
+
 nav img{
 width:100%;
 object-fit: cover;
 }
+
 
 .coeur{
 position: absolute;
@@ -25,6 +30,7 @@ width: 100%;
 padding-bottom: 5%;
 border-radius: 20px 20px 0px 0px;
 padding-top: 1%;
+padding-left: 2%;
 }
 
 .right{
@@ -32,11 +38,12 @@ background-color: white;
 border-radius: 20px 20px 20px 20px;
 padding-left: 1%;
 margin-left: 1%;
+width: 80%;
 }
 
 .right1 a{
-    text-decoration: none;
-    color: initial;
+text-decoration: none;
+color: black;
 }
 
 .right1:hover::before{
@@ -108,12 +115,21 @@ width: 2%;
 
 .clique{
 background:linear-gradient(#ff79da, #9356DC);
-width: 80%;
-padding-left: 2%;
-border-radius: 25px;
+width: 20%;
+padding-right: 15%;
+font-size: 35px;
+border-radius: 50px;
 padding-bottom: 15px;
 padding-top:15px; 
-margin-top: 3%;      
+margin-top: 10%;    
+margin-left: 25%; 
+margin-bottom: 15%; 
+}
+
+.clique a{
+text-decoration: none;
+color: white;
+padding-left: 35%;
 }
 
 #commander:hover{
@@ -121,10 +137,7 @@ margin-top: 3%;
 	box-shadow: 6px 6px 6px grey;
 }
 
-.clique a{
-text-decoration: none;
-color: white;
-}
+
 
 /*Footer*/
 footer {
