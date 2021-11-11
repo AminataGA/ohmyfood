@@ -19,7 +19,7 @@ object-fit: cover;
 
 .coeur{
 position: absolute;
-left: 80%;
+left: 85%;
 font-size: 50px;
 color: initial;
 }
@@ -42,8 +42,23 @@ background-color: white;
 border-radius: 20px 20px 20px 20px;
 padding-left: 1%;
 margin-left: 1%;
-width: 92%;
+width: 85%;
+animation-duration: 3000ms;
+animation-name: verticale;
+animation-direction: normal;
+} 
+    @keyframes verticale {
+    from {
+    margin-top: 50%;
+    width: 85%;
+    opacity: 0;
+    }
+     
+    to {
+    width: 85%;
+    }
 }
+    
 
 .right1 a{
 text-decoration: none;
