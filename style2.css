@@ -28,9 +28,14 @@ color: initial;
 background-color: #f2f2f2;
 width: 100%;
 padding-bottom: 5%;
-border-radius: 20px 20px 0px 0px;
+border-radius: 50px 50px 0px 0px;
 padding-top: 1%;
 padding-left: 2%;
+}
+
+.container p {                        
+white-space: nowrap;
+text-overflow: ellipsis;
 }
 
 h3{
@@ -65,19 +70,43 @@ text-decoration: none;
 color: black;
 }
 
-.right1:hover::before{
-background:initial;
+.boxGreen::before{
+   text-overflow: ellipsis; 
 }
+.boxGreen::after{
+color: white;
+display: flex;
+background-color:#99E2D0 ;
 
-.right1:hover{
-background: #99E2D0;
-width: 100px;
-cursor: pointer;
 }
+    
+.boxGreen:hover{
+animation-duration: 1s;
+animation-name: spin;
+}
+    @keyframes spin {
+        from {
+        transform:rotate(0deg);
+        opacity: 1;
+        }
+      
+        to {
+        transform: rotate(360deg);
+        }
+      }
+    
+      @-webkit-keyframes spin {
+        from {
+          -webkit-transform:rotate(0deg);
+          opacity: 1;
+        }
+      
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
 
 .right p{
-display: flex;
-justify-content: space-between;
 font-size: 35px;
 padding-bottom: 20px;
 padding-right: 40px;
@@ -127,7 +156,7 @@ padding-top: 5%;
 }
 
 h4{
-   padding-bottom: 5%;
+padding-bottom: 5%;
 }
 
 footer a {

@@ -1,4 +1,4 @@
-@media all and (min-width:1440px){
+@media all and (max-width:1440px){
 nav img{
 width: 400px;
 }
@@ -31,6 +31,11 @@ font-size: 50px;
 color: initial;
 }
 
+.coeur:hover{
+background-image:linear-gradient(#ff79da, #9356DC);
+
+}
+
 .container{
 background-color: #f2f2f2;
 width: 100%;
@@ -40,11 +45,54 @@ padding-top: 1%;
 padding-left: 2%;
 }
 
+.boxGreen{
+color: white;
+animation-name: spin;
+
+}
+.boxGreen:hover{
+   border-radius: 100px;
+   background-color: #99E2D0;
+   color: white;
+   animation-duration: 2s infinite;
+   animation-name: spin;
+
+   }
+   
+   @keyframes spin {
+       from {
+         transform:rotate(360deg);
+          opacity: 0;
+       }
+     
+       to {
+         transform: rotate(360deg);
+       }
+     }
+   
+     @-webkit-keyframes spin {
+       from {
+         -webkit-transform:rotate(0deg);
+         opacity: 1;
+       }
+     
+       to {
+         -webkit-transform: rotate(360deg);
+       }
+}   
+
+.container p {                        
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
 h3{
 padding-top: 20px;
+
 }
 
 .right{
+box-shadow: rgb(56, 55, 55);
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 padding-left: 1%;
@@ -128,7 +176,7 @@ padding-top: 5%;
 }
 
 h4{
-   padding-bottom: 5%;
+padding-bottom: 5%;
 }
 
 footer a {
