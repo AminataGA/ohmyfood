@@ -107,6 +107,8 @@ position: fixed;
 top:0; left:0; right:0; bottom:0;
 animation-duration: 2s;
 animation-name: spin;
+animation-timing-function: linear infinite;
+opacity: 0;
 }
 
 
@@ -114,12 +116,11 @@ animation-name: spin;
 @keyframes spin {
     from {
       transform:rotate(0deg);
-      
+       opacity: 1;
     }
   
     to {
       transform: rotate(360deg);
-      opacity: 0;
     }
   }
 
