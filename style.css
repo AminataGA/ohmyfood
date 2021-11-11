@@ -15,10 +15,7 @@ h4
 font-family:  'Shrikhand', 'cursive';
 }
 
-.arrow{
-position: absolute;
-top: 50px; right:50px;
-}
+
 
 nav{
 padding-bottom: 10%;
@@ -71,15 +68,17 @@ font-size: 40px;
 }
 
 .violet{
-  color: #9356DC;
+color: #9356DC;
 }
 
+
 .violet2{
+position: relative;
+left: 5px; top:140px;
 color:white;
 background-color: #9356DC;
 border-radius: 50px 50px 50px 50px;
-width: 15%;
-
+width: 1.5em;
 }
 
 .container a{
@@ -155,9 +154,7 @@ margin-top: 5%;
 width: 100%;
 object-fit: cover;
 border-radius: 50px 50px 0px 0px;
-
 }
-
 
 
 
@@ -210,8 +207,8 @@ color: initial;
 
 
 .coeur:hover{
-background:linear-gradient(#ff79da, #9356DC, 20px) ;
-border-radius: 50px;
+background:linear-gradient(#ff79da, #9356DC) ;
+
 }
 
 .fondBlanc{
