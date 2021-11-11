@@ -16,10 +16,11 @@ width:100%;
 object-fit: cover;
 }
 
+
 .coeur{
 position: absolute;
-left: 380px;
-font-size: 40px;
+left: 80%;
+font-size: 50px;
 color: initial;
 }
 
@@ -32,23 +33,51 @@ padding-top: 1%;
 padding-left: 2%;
 }
 
+h3{
+padding-top: 20px;
+}
+
 .right{
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 padding-left: 1%;
 margin-left: 1%;
-width: 80%;
+width: 92%;
 }
 
- .right a {
-    text-decoration: none;
+.right1 a{
+text-decoration: none;
+color: black;
 }
+
+.right1:hover::before{
+background:initial;
+}
+
+.right1:hover{
+background: #99E2D0;
+width: 100px;
+cursor: pointer;
+}
+
+.right p{
+display: flex;
+justify-content: space-between;
+font-size: 35px;
+padding-bottom: 20px;
+padding-right: 40px;
+}
+
+
 
 h2{
 color: rgb(71, 71, 71);
 font-weight:lighter;
-border-bottom:#068d6b solid 5px;
-width: 2%;
+font-size: 40px;
+border-bottom:#99E2D0 solid 5px;
+width: 10%;
+margin-top: 5%;
+margin-bottom: 2%;
 }
 
 .clique{
@@ -63,12 +92,19 @@ margin-top: 10%;
 margin-left: 25%; 
 margin-bottom: 15%; 
 }
-    
+
 .clique a{
 text-decoration: none;
 color: white;
 padding-left: 35%;
 }
+
+#commander:hover{
+	filter:  brightness(1.2);
+	box-shadow: 6px 6px 6px grey;
+}
+
+
 
 /*Footer*/
 footer {
@@ -78,16 +114,17 @@ padding-bottom: 5%;
 padding-left: 5%;
 padding-top: 5%;
 }
-        
+
 h4{
-padding-bottom: 5%;
+   padding-bottom: 5%;
 }
-        
+
 footer a {
 text-decoration: none;
 color: white;
+
 }
-        
+
 .espace {
 padding-right: 5%;
 }
