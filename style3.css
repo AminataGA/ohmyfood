@@ -42,7 +42,6 @@ padding-left: 2%;
 }
 
 .container p {                        
-white-space: nowrap;
 text-overflow: ellipsis;
 }
 

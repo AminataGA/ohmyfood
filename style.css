@@ -1,6 +1,3 @@
-@media screen and(max-width:850px) {
-    
-}
 
 body
 {font-family: 'Roboto', sans-serif;
@@ -15,7 +12,10 @@ h4
 font-family:  'Shrikhand', 'cursive';
 }
 
-
+section a{
+text-decoration: none;
+color: initial;
+}
 
 nav{
 padding-bottom: 10%;
@@ -40,6 +40,8 @@ padding-left: 0.5%;
 
 nav p{
 color: rgb(59, 57, 59);
+text-align: center;
+font-size: 45px;
 }
 
 nav .espace{
@@ -48,17 +50,18 @@ padding-left: 30%;
 }
 
 nav h2{
-padding-left: 10%;
-margin-top: 5%;	
-}
-
-nav p{
-padding-left: 10%;
-font-size: 45px;	
+margin-top: 5%;
+text-align: center;
+font-size: 80px;	
 }
 
 h2{
 margin-left: 6%;
+}
+
+h2 section{
+margin-left: 6%;
+padding-bottom: 20px;
 }
 
 section {
@@ -74,11 +77,11 @@ color: #9356DC;
 
 .violet2{
 position: relative;
-left: 5px; top:140px;
+top:140px;
 color:white;
 background-color: #9356DC;
-border-radius: 50px 50px 50px 50px;
-width: 1.5em;
+border-radius: 40px;
+width: 1.6em;
 }
 
 .container a{
@@ -170,6 +173,11 @@ font-weight: bold;
 margin-left: 10px;
 }
 
+.paragraphe:hover{
+background:border-box;
+cursor: pointer;
+}
+
 .paragraphe2 {
 background-color: #f2f2f2;
 width: 100%;
@@ -184,6 +192,11 @@ font-weight: bold;
 margin-left: 10px;
 }
 
+.paragraphe2:hover{
+background:border-box;
+cursor: pointer;
+}
+
 .mauve{
 background-color: #f2ebfb;
 width: 100%;
@@ -195,6 +208,11 @@ margin-top: 20px;
 box-shadow: 2px 2px 15px 2px  #e2e1e1;
 font-weight: bold;
 margin-left: 10px;
+}
+
+.mauve:hover{
+background:border-box;
+cursor: pointer;
 }
 
 .coeur{
@@ -214,11 +232,16 @@ background:linear-gradient(#ff79da, #9356DC) ;
 .fondBlanc{
 background-color: white;
 border-radius: 50px 50px 50px 50px;
-box-shadow:rgb(56, 55, 55);
+box-shadow:2px 7px 15px 2px rgb(109, 108, 108);
 padding-bottom: 20px;
 margin-bottom: 10%;
 margin-left: 5%;
 margin-right: 5%;
+cursor: pointer;
+}
+
+.fondBlanc:hover{
+background: border-box;
 }
 
 .nouveau{

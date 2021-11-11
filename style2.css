@@ -37,10 +37,7 @@ padding-top: 1%;
 padding-left: 2%;
 }
 
-.container p {                        
-white-space: nowrap;
-text-overflow: ellipsis;
-}
+
 
 h3{
 padding-top: 20px;
@@ -52,7 +49,7 @@ border-radius: 20px 20px 20px 20px;
 padding-left: 1%;
 margin-left: 1%;
 width: 85%;
-animation-duration: 3000ms;
+animation-duration: 2000ms;
 animation-name: verticale;
 animation-direction: normal;
 } 
@@ -74,16 +71,7 @@ text-decoration: none;
 color: black;
 }
 
-.boxGreen::before{
-   text-overflow: ellipsis; 
-}
-.boxGreen::after{
-color: white;
-display: flex;
-background-color:#99E2D0 ;
-
-}
-    
+ 
 .boxGreen:hover{
 animation-duration: 1s;
 animation-name: spin;
@@ -96,6 +84,7 @@ animation-name: spin;
       
         to {
         transform: rotate(360deg);
+       
         }
       }
     
