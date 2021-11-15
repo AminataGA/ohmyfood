@@ -223,23 +223,23 @@ left: 85%;
 font-weight: 700;
 font-size:50px;
 color: initial;
-background-color: black;
-width: 50px;
- height: 50px;
- transform: rotate(45deg);
+ackground-color: black;
+idth: 50px;
+ eight: 50px;
+ ransform: rotate(45deg);
 }
-.coeur::before, .coeur::after {
+coeur::before, .coeur::after {
 	content: "";
 	width: 50px;
 	height: 50px;
 	position: absolute;
 	border-radius: 50px 50px 0px 50px;
   }
-  .coeur::before {
+  coeur::before {
 	left: -25px;
 	background-color: black;
   }
-  .coeur::after {
+  coeur::after {
 	top: -25px;
 	background-color: black;
   }

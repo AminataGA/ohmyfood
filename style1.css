@@ -14,12 +14,12 @@ h4,h1
 font-family: 'Shrikhand', 'cursive';
 }
 
-.arrow{
+.arrow_header{
 color: black;
 }
 
-header img{
-padding-left: 30%;
+header img {
+padding-left: 25%;
 }
 
 nav img{
@@ -27,7 +27,7 @@ width:100%;
 object-fit: cover;
 }
 
-.coeur::before, .coeur::after {
+coeur::before, .coeur::after {
    content: "";
    width: 50px;
    height: 50px;
@@ -36,42 +36,34 @@ object-fit: cover;
  }
  .coeur::before {
    left: -25px;
-   background-color: white;
+   background-color: transparent;
  }
- .coeur::after {
+ coeur::after {
    top: -25px;
-   background-color: white;
+   background-color: rgb(12, 10, 10);
  }
 
-.coeur{
-background-color: white;
+
+ /*Container*/
+
+.container_coeur{
+color:linear-gradient(#ff79da, #9356DC);
 border:2px solid black 50px 50px 0px 50px;
 position: absolute;
 left: 85%;
 width: 50px;
 height: 50px;
-transform: rotate(45deg);
-}
-
-.coeur:hover{
-background-image:linear-gradient(#ff79da, #9356DC);
+transorm: rotate(45deg);
 }
 
 
-.slide{
-   
-      position: absolute;
-      bottom: 0;
-      left: 100%;
-      right: 0;
-      background-color: #008CBA;
-      overflow: hidden;
-      width: 0;
-      height: 100%;
-      transition: .5s ease;
-    
-}
+.coeur:hover::before{
+  background-color: transparent;
+  }
 
+.coeur:hover::after{
+color:linear-gradient(#ff79da, #9356DC);
+}
 
 .container{
 background-color: #f2f2f2;
@@ -82,12 +74,12 @@ padding-top: 1%;
 padding-left: 2%;
 }
 
-.boxGreen{
+.container_boxGreen{
 color: white;
 animation-name: spin; 
 }
 
-.boxGreen:hover{
+.container_boxGreen:hover{
    border-radius: 100px;
    background-color: #99E2D0;
    color: white;
@@ -118,22 +110,19 @@ animation-name: spin;
        }
 }   
 
-
-
-
-h3{
+.container h3{
 padding-top: 20px;
 
 }
 
-.right{
+.container_menu{
 box-shadow:2px 7px 15px 2px rgb(56, 55, 55);
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 padding-left: 1%;
 margin-left: 1%;
 width: 85%;
-animation-duration: 3000ms;
+animation-duration: 5000ms;
 animation-name: verticale;
 animation-direction: normal;
 text-overflow: ellipsis;
@@ -151,16 +140,14 @@ text-overflow: ellipsis;
    }
  }
 
-
-.right1 a{
+.container_menu1 a{
 text-decoration: none;
 color: black;
 cursor: pointer;
 }
 
 
-
-.right p{
+.container_menu p{
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -173,7 +160,7 @@ transition-duration: 200ms;
 }
 
 
-h2{
+.container h2{
 color: rgb(71, 71, 71);
 font-weight:lighter;
 font-size: 40px;
@@ -183,7 +170,7 @@ margin-top: 5%;
 margin-bottom: 2%;
 }
 
-.clique{
+.container_clique{
 background:linear-gradient(#ff79da, #9356DC);
 width: 20%;
 padding-right: 15%;
@@ -196,7 +183,7 @@ margin-left: 25%;
 margin-bottom: 15%; 
 }
 
-.clique a{
+.container_clique a{
 text-decoration: none;
 color: white;
 padding-left: 35%;
@@ -213,7 +200,7 @@ padding-left: 5%;
 padding-top: 5%;
 }
 
-h4{
+footer h4{
 padding-bottom: 5%;
 }
 

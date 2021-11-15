@@ -1,171 +1,215 @@
-body
-{font-family: 'Roboto', sans-serif;
-}
-
-h4,h1
-{
-font-family: 'Shrikhand', 'cursive';
-}
-
-.arrow{
-color: black;
-}
-
-header img{
-padding-left: 30%;
-}
-
-nav img{
-width:100%;
-object-fit: cover;
-}
-
-
-.coeur{
-position: absolute;
-left: 85%;
-font-size: 50px;
-color: initial;
-}
-
-.coeur:hover{
-background-image:linear-gradient(#ff79da, #9356DC);
-}
-
-.container{
-background-color: #f2f2f2;
-width: 100%;
-padding-bottom: 5%;
-border-radius: 20px 20px 0px 0px;
-padding-top: 1%;
-padding-left: 2%;
-}
-
-.container p {                        
-text-overflow: ellipsis;
-}
-
-h3{
-padding-top: 20px;
-}
-
-.right{
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-padding-left: 1%;
-margin-left: 1%;
-width: 85%;
-animation-duration: 3000ms;
-animation-name: verticale;
-animation-direction: normal;
-}
-    @keyframes verticale {
-    from {
-    margin-top: 50%;
-    width: 85%;
-    opacity: 0;
+@media all and (max-width:1440px){
+  nav img{
+  width: 400px;
+  }
+  
+  }
+  
+  body
+  {font-family: 'Roboto', sans-serif;
+  }
+  
+  h4,h1
+  {
+  font-family: 'Shrikhand', 'cursive';
+  }
+  
+  .arrow_header{
+  color: black;
+  }
+  
+  header img {
+  padding-left: 25%;
+  }
+  
+  nav img{
+  width:100%;
+  object-fit: cover;
+  }
+  
+  coeur::before, .coeur::after {
+     content: "";
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     border-radius: 50px 50px 0px 50px;
+   }
+   .coeur::before {
+     left: -25px;
+     background-color: transparent;
+   }
+   coeur::after {
+     top: -25px;
+     background-color: rgb(12, 10, 10);
+   }
+  
+  
+   /*Container*/
+   
+  .container_coeur{
+  color:linear-gradient(#ff79da, #9356DC);
+  border:2px solid black 50px 50px 0px 50px;
+  position: absolute;
+  left: 85%;
+  width: 50px;
+  height: 50px;
+  transorm: rotate(45deg);
+  }
+  
+  
+  .coeur:hover::before{
+    background-color: transparent;
     }
+  
+  .coeur:hover::after{
+  color:linear-gradient(#ff79da, #9356DC);
+  }
+  
+  .container{
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-bottom: 5%;
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 1%;
+  padding-left: 2%;
+  }
+  
+  .container_boxGreen{
+  color: white;
+  animation-name: spin; 
+  }
+  
+  .container_boxGreen:hover{
+     border-radius: 100px;
+     background-color: #99E2D0;
+     color: white;
+     animation-duration: 2s infinite;
+     animation-name: spin;
+  
+     }
      
-    to {
-    width: 85%;
-    }
-}
-    
-.right1 a{
-text-decoration: none;
-color: black;
-}
-
-.boxGreen{
-color: #99E2D0;
-}
-    
-.boxGreen:hover{
-animation-duration: 1s;
-animation-name: spin;
-}
-    
-@keyframes spin {
-    from {
-    transform:rotate(0deg);
-    opacity: 1;
-    }
-      
-        to {
-        transform: rotate(360deg);
-        }
-      }
-    
-      @-webkit-keyframes spin {
-        from {
-          -webkit-transform:rotate(0deg);
-          opacity: 1;
-        }
-      
-        to {
-          -webkit-transform: rotate(360deg);
-        }
-      }
-
-.right p{
-display: flex;
-justify-content: space-between;
-font-size: 35px;
-padding-bottom: 20px;
-padding-right: 40px;
-}
-
-
-
-h2{
-color: rgb(71, 71, 71);
-font-weight:lighter;
-font-size: 40px;
-border-bottom:#99E2D0 solid 5px;
-width: 10%;
-margin-top: 5%;
-margin-bottom: 2%;
-}
-
-.clique{
-background:linear-gradient(#ff79da, #9356DC);
-width: 20%;
-padding-right: 15%;
-font-size: 35px;
-border-radius: 50px;
-padding-bottom: 15px;
-padding-top:15px; 
-margin-top: 10%;    
-margin-left: 25%; 
-margin-bottom: 15%; 
-}
-
-.clique a{
-text-decoration: none;
-color: white;
-padding-left: 35%;
-}
-
-
-/*Footer*/
-footer {
-color: white;
-background-color: rgb(56, 55, 55);
-padding-bottom: 5%;
-padding-left: 5%;
-padding-top: 5%;
-}
-
-h4{
-padding-bottom: 5%;
-}
-
-footer a {
-text-decoration: none;
-color: white;
-
-}
-
-.espace {
-padding-right: 5%;
-}
+     @keyframes spin {
+         from {
+           transform:rotate(360deg);
+            opacity: 0;
+         }
+       
+         to {
+           transform: rotate(360deg);
+         }
+       }
+     
+       @-webkit-keyframes spin {
+         from {
+           -webkit-transform:rotate(0deg);
+           opacity: 1;
+         }
+       
+         to {
+           -webkit-transform: rotate(360deg);
+         }
+  }   
+  
+  .container h3{
+  padding-top: 20px;
+  
+  }
+  
+  .container_menu{
+  box-shadow:2px 7px 15px 2px rgb(56, 55, 55);
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  padding-left: 1%;
+  margin-left: 1%;
+  width: 85%;
+  animation-duration: 5000ms;
+  animation-name: verticale;
+  animation-direction: normal;
+  text-overflow: ellipsis;
+  }
+  
+     @keyframes verticale {
+     from {
+     margin-top: 50%;
+     width: 85%;
+     opacity: 0;
+     }
+   
+     to {
+     width: 85%;
+     }
+   }
+  
+  .container_menu1 a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  }
+  
+  
+  .container_menu p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  z-index: 9;
+  animation: linear;
+  transition-duration: 200ms;
+  }
+  
+  
+  .container h2{
+  color: rgb(71, 71, 71);
+  font-weight:lighter;
+  font-size: 40px;
+  border-bottom:#99E2D0 solid 5px;
+  width: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  }
+  
+  .container_clique{
+  background:linear-gradient(#ff79da, #9356DC);
+  width: 20%;
+  padding-right: 15%;
+  font-size: 35px;
+  border-radius: 50px;
+  padding-bottom: 15px;
+  padding-top:15px; 
+  margin-top: 10%;    
+  margin-left: 25%; 
+  margin-bottom: 15%; 
+  }
+  
+  .container_clique a{
+  text-decoration: none;
+  color: white;
+  padding-left: 35%;
+  }
+  
+  
+  
+  /*Footer*/
+  footer {
+  color: white;
+  background-color: rgb(56, 55, 55);
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  }
+  
+  footer h4{
+  padding-bottom: 5%;
+  }
+  
+  footer a {
+  text-decoration: none;
+  color: white;
+  
+  }
+  
+  .espace {
+  padding-right: 5%;
+  }
