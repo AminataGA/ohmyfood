@@ -180,6 +180,8 @@ margin-top: 5%;
 margin-bottom: 2%;
 }
 
+
+
 .container_clique{
 background:linear-gradient(#ff79da, #9356DC);
 width: 20%;
@@ -199,7 +201,11 @@ color: white;
 padding-left: 35%;
 }
 
-
+.container_clique:hover{
+filter:brightness(1.5);
+box-shadow: 6px 6px 6px rgb(128, 128, 128);
+cursor:pointer;
+}
 
 /*Footer*/
 footer {

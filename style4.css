@@ -196,9 +196,13 @@
   text-decoration: none;
   color: white;
   padding-left: 35%;
-  filter: drop-shadow(16px 16px 20px red) invert(75%)}
+ }
 
- 
+  .container_clique:hover{
+  filter:brightness(1.5);
+  box-shadow: 6px 6px 6px rgb(128, 128, 128);
+  cursor:pointer;
+  }
   
   
   

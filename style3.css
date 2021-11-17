@@ -192,7 +192,11 @@
   padding-left: 35%;
   }
   
-  
+  .container_clique:hover{
+  filter:brightness(1.5);
+  box-shadow: 6px 6px 6px rgb(128, 128, 128);
+  cursor:pointer;
+  }
   
   /*Footer*/
   footer {
