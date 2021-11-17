@@ -1,4 +1,12 @@
-
+@media  screen and (min-width: 800px){
+  main img{
+    width: 20%;
+  }
+  main {
+    display: flex;
+    
+  }
+}
 body
 {font-family: 'Roboto', sans-serif;
 }
@@ -115,7 +123,7 @@ height: 200px;
 margin: auto;
 position: fixed;
 top:0; left:0; right:0; bottom:0;
-animation-duration: 2s;
+animation-duration: 2000ms;
 animation-name: spin;
 opacity: 0;
 }
@@ -127,6 +135,7 @@ opacity: 0;
     }
   
     to {
+    
       transform: rotate(360deg);
     }
   }
@@ -223,31 +232,7 @@ left: 85%;
 font-weight: 700;
 font-size:50px;
 color: initial;
-ackground-color: black;
-idth: 50px;
- eight: 50px;
- ransform: rotate(45deg);
 }
-coeur::before, .coeur::after {
-	content: "";
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	border-radius: 50px 50px 0px 50px;
-  }
-  coeur::before {
-	left: -25px;
-	background-color: black;
-  }
-  coeur::after {
-	top: -25px;
-	background-color: black;
-  }
- 
- .coeur:hover{
- background-image:linear-gradient(#ff79da, #9356DC);
- }
-
 
 
 .fondBlanc{
@@ -261,9 +246,6 @@ margin-right: 5%;
 cursor: pointer;
 }
 
-.fondBlanc:hover{
-background: border-box;
-}
 
 .nouveau{
 position:absolute;

@@ -27,43 +27,47 @@ width:100%;
 object-fit: cover;
 }
 
-coeur::before, .coeur::after {
-   content: "";
-   width: 50px;
-   height: 50px;
-   position: absolute;
-   border-radius: 50px 50px 0px 50px;
- }
- .coeur::before {
-   left: -25px;
-   background-color: transparent;
- }
- coeur::after {
-   top: -25px;
-   background-color: rgb(12, 10, 10);
- }
-
-
  /*Container*/
-
-.container_coeur{
-color:linear-gradient(#ff79da, #9356DC);
-border:2px solid black 50px 50px 0px 50px;
-position: absolute;
-left: 85%;
-width: 50px;
-height: 50px;
-transorm: rotate(45deg);
-}
-
-
-.coeur:hover::before{
-  background-color: transparent;
-  }
-
-.coeur:hover::after{
-color:linear-gradient(#ff79da, #9356DC);
-}
+  .container__coeur {
+    
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    left: 82%;
+    background: black;
+    }
+    .container__coeur:hover::before {
+    opacity: 1;
+    
+    }
+    .container__coeur::before { 
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+    }
+    .menu__like {
+    transition-duration: 0.25s;
+    background-color: #f2f2f2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+    text-shadow: 0px 0px 2px rgb(8, 8, 8);
+    }
+    .container__coeur:hover .menu__like--noBg {
+    opacity: 0;
+    }
+    
 
 .container{
 background-color: #f2f2f2;
@@ -74,17 +78,23 @@ padding-top: 1%;
 padding-left: 2%;
 }
 
-.container_boxGreen{
-color: white;
-animation-name: spin; 
+.container_boxGreen::after{
+
+content: url("file:///C:/Users/Hadja/Downloads/check_circle_black_24dp.svg"); 
+left: -55%;
+/*z-index: 2;*/
+width: 10%;
+transition: .3s ;
+
 }
 
-.container_boxGreen:hover{
+.container_oxGreen:hover{
    border-radius: 100px;
    background-color: #99E2D0;
    color: white;
    animation-duration: 2s infinite;
    animation-name: spin;
+   position: absolute;
 
    }
    
@@ -122,22 +132,22 @@ border-radius: 20px 20px 20px 20px;
 padding-left: 1%;
 margin-left: 1%;
 width: 85%;
-animation-duration: 5000ms;
+animation-duration: 4000ms;
 animation-name: verticale;
 animation-direction: normal;
 text-overflow: ellipsis;
 }
 
    @keyframes verticale {
-   from {
-   margin-top: 50%;
-   width: 85%;
-   opacity: 0;
-   }
- 
-   to {
-   width: 85%;
-   }
+    from {
+      transform: translateY(15px);
+      opacity: 0;
+  }
+  
+  to{
+      transform: translateY(0px);
+      opacity: 1;
+  }
  }
 
 .container_menu1 a{
