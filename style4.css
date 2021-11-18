@@ -1,9 +1,41 @@
-@media all and (max-width:1440px){
-  nav img{
-  width: 400px;
+@media  all and (min-device-width:768px){
+  main img{
+    width: 50%;
+position: relative;
+right: 20%;
+box-sizing: border-box;
   }
-  
+.fondBlanc{
+  width: 63%; 
+  position: relative;
+left: 15%;
+}
+
+main h2 {
+  margin-right: 50%;
+}
+.nouveau{
+  position: absolute;
+  left:55px;
+  width: 55%;
+}
+nav{
+  width: 30%;
   }
+  body{
+  width: 50%;
+  margin: 0;
+}
+  main {
+    padding: 0 2rem;
+    margin: 0 2rem;
+    width: 40%;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+}
   
   body
   {font-family: 'Roboto', sans-serif;
@@ -20,6 +52,7 @@
   
   header img {
   padding-left: 25%;
+  width: 60%;
   }
   
   nav img{
@@ -73,52 +106,38 @@
     .container__coeur:hover .menu__like--noBg {
     opacity: 0;
     }
-
+    .slide {
+      position: relative;
+      width: 50%;
+    }
+    
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      right: 0;
+      background-color: #99E2D0;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease;
+    }
+    
+.slide:hover .overlay {
+content:url("Maquettes Ohmyfood (1)/Maquettes Ohmyfood/maquettes/check_circle_white_24dp (1).svg");
+width:100%;
+left: 0;
+}
   .container{
   background-color: #f2f2f2;
   width: 100%;
   padding-bottom: 5%;
   border-radius: 20px 20px 0px 0px;
   padding-top: 1%;
-  padding-left: 2%;
-  }
-  
-  .container_boxGreen{
-  color: white;
-  animation-name: spin; 
-  }
-  
-  .container_boxGreen:hover{
-     border-radius: 100px;
-     background-color: #99E2D0;
-     color: white;
-     animation-duration: 2s infinite;
-     animation-name: spin;
-  
-     }
-     
-     @keyframes spin {
-         from {
-           transform:rotate(360deg);
-            opacity: 0;
-         }
-       
-         to {
-           transform: rotate(360deg);
-         }
-       }
-     
-       @-webkit-keyframes spin {
-         from {
-           -webkit-transform:rotate(0deg);
-           opacity: 1;
-         }
-       
-         to {
-           -webkit-transform: rotate(360deg);
-         }
-  }   
-  
+  padding-left: 2%
+}
+ 
+
   .container h3{
   padding-top: 20px;
   

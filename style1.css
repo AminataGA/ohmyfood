@@ -1,12 +1,45 @@
-@media all and (max-width:1440px){
-nav img{
-width: 400px;
+@media  all and (min-device-width:768px){
+  main img{
+    width: 50%;
+position: relative;
+right: 20%;
+box-sizing: border-box;
+  }
+.fondBlanc{
+  width: 63%; 
+  position: relative;
+left: 15%;
 }
 
+main h2 {
+  margin-right: 50%;
+}
+.nouveau{
+  position: absolute;
+  left:55px;
+  width: 55%;
+}
+nav{
+  width: 30%;
+  }
+  body{
+  width: 50%;
+  margin: 0;
+}
+  main {
+    padding: 0 2rem;
+    margin: 0 2rem;
+    width: 40%;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 body
 {font-family: 'Roboto', sans-serif;
+  margin: 0 2rem;
 }
 
 h4,h1
@@ -19,55 +52,57 @@ color: black;
 }
 
 header img {
-padding-left: 25%;
+padding-left: 15%;
+width: 60%;
 }
 
 nav img{
 width:100%;
+height: 100%;
 object-fit: cover;
 }
 
  /*Container*/
-  .container__coeur {
-    
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    position: relative;
-    left: 82%;
-    background: black;
-    }
-    .container__coeur:hover::before {
-    opacity: 1;
-    
-    }
-    .container__coeur::before { 
-    opacity: 0;
-    transition: 0.5s;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-    }
-    .menu__like {
-    transition-duration: 0.25s;
-    background-color: #f2f2f2;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: lighten;
-    text-shadow: 0px 0px 2px rgb(8, 8, 8);
-    }
-    .container__coeur:hover .menu__like--noBg {
-    opacity: 0;
-    }
-    
+ .container__coeur {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: relative;
+  left: 82%;
+  background: black;
+  }
+
+  .container__coeur:hover::before {
+  opacity: 1;
+  }
+  .container__coeur::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  }
+  .menu__like {
+  transition-duration: 0.25s;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+  text-shadow: 0px 0px 2px rgb(8, 8, 8);
+  }
+  .container__coeur:hover .menu__like--noBg {
+  opacity: 0;
+  }
 
 .container{
 background-color: #f2f2f2;
@@ -78,48 +113,8 @@ padding-top: 1%;
 padding-left: 2%;
 }
 
-.container_boxGreen::after{
 
-content: url("file:///C:/Users/Hadja/Downloads/check_circle_black_24dp.svg"); 
-left: -55%;
-/*z-index: 2;*/
-width: 10%;
-transition: .3s ;
-
-}
-
-.container_oxGreen:hover{
-   border-radius: 100px;
-   background-color: #99E2D0;
-   color: white;
-   animation-duration: 2s infinite;
-   animation-name: spin;
-   position: absolute;
-
-   }
-   
-   @keyframes spin {
-       from {
-         transform:rotate(360deg);
-          opacity: 0;
-       }
-     
-       to {
-         transform: rotate(360deg);
-       }
-     }
-   
-     @-webkit-keyframes spin {
-       from {
-         -webkit-transform:rotate(0deg);
-         opacity: 1;
-       }
-     
-       to {
-         -webkit-transform: rotate(360deg);
-       }
-}   
-
+  
 .container h3{
 padding-top: 20px;
 
@@ -134,13 +129,49 @@ margin-left: 1%;
 width: 85%;
 animation-duration: 4000ms;
 animation-name: verticale;
-animation-direction: normal;
+animation-direction: ease-out;
 text-overflow: ellipsis;
 }
 
+.container_overlay {
+      position: absolute;
+      bottom: 2px;
+      left: 20px;
+      right: 2;
+      cursor: pointer;
+      background-color: #99E2D0;
+      overflow: hidden;
+      width: 20;
+      height: 1000px;
+      transition: .5s ease;
+    }
+
+container_slide:hover:before{
+    transform: translateX(-100%);
+    }
+  container_slide:hover:after{
+    transform: translateX(-190%) rotate(1turn);
+    }
+
+    .container_slide {
+      position: relative;
+      width: 20%;
+     left: 950px;
+    
+    }
+    .container_slide:hover .container_overlay {
+      content:url("Maquettes Ohmyfood (1)/Maquettes Ohmyfood/maquettes/check_circle_white_24dp (1).svg");
+      idth: 85%;
+      paddingleft: 1%;
+
+      height: 0;
+      left: -50%;
+      transfor: translate(-100%, 100%);
+    }
+
    @keyframes verticale {
     from {
-      transform: translateY(15px);
+      transform: translateY(100px);
       opacity: 0;
   }
   
@@ -229,3 +260,7 @@ color: white;
 .espace {
 padding-right: 5%;
 }
+
+
+
+

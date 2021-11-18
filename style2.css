@@ -1,12 +1,44 @@
-@media all and (max-width:1440px){
-  nav img{
-  width: 400px;
+@media  all and (min-device-width:768px){
+  main img{
+    width: 50%;
+position: relative;
+right: 20%;
+box-sizing: border-box;
   }
-  
+.fondBlanc{
+  width: 63%; 
+  position: relative;
+left: 15%;
+}
+
+main h2 {
+  margin-right: 50%;
+}
+.nouveau{
+  position: absolute;
+  left:55px;
+  width: 55%;
+}
+nav{
+  width: 30%;
   }
-  
+  body{
+  width: 50%;
+  margin: 0;
+}
+  main {
+    padding: 0 2rem;
+    margin: 0 2rem;
+    width: 40%;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+}
   body
   {font-family: 'Roboto', sans-serif;
+ 
   }
   
   h4,h1
@@ -29,6 +61,11 @@
   
   
    /*Container*/
+
+   .container_boxGreen {
+    content: "Maquettes Ohmyfood (1)/Maquettes Ohmyfood/maquettes/done_outline_white_24dp.svg";
+    color: #99E2D0;
+}
    .container__coeur {
     height: 50px;
     width: 50px;
@@ -79,10 +116,9 @@
   padding-left: 2%;
   }
   
-  .container_boxGreen{
-  color: white;
-  animation-name: spin; 
-  }
+  
+
+  
   
   .container_boxGreen:hover{
      border-radius: 100px;
@@ -222,4 +258,4 @@
   .espace {
   padding-right: 5%;
   }
-  
+ 
