@@ -3,6 +3,8 @@
   body{
   width: 75%;
   margin:0 10rem;
+  display: grid;
+
 }
  
 }
@@ -22,7 +24,7 @@ color: black;
 }
 
 header img {
-padding-left: 15%;
+padding-left: 25%;
 width: 60%;
 }
 
@@ -33,10 +35,61 @@ object-fit: cover;
 }
 
 
-.prix{
+.prix:hover{
   padding-right: 10%;
+  background: #99E2D0;
+  content: url("Maquettes Ohmyfood (1)/Maquettes Ohmyfood/maquettes/check_circle_white_24dp (1).svg");
 }
-.slide::after {
+
+.coche{
+  width: 60px;
+    height: 100%;
+    position: absolute;
+    right: -60px;
+    background: #99E2D0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.coche1{
+  position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.4s;
+    transform: rotate(-180deg);
+}
+
+.coche1::before{
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  width: 8px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #99E2D0;
+  transform-origin: right;
+  transform: rotate(45deg);
+}
+
+.coche1::after{
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  width: 14px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #99E2D0;
+  transform-origin: left;
+  transform: rotate(-45deg);
+}
+
+.slie::after {
 content: url("Maquettes Ohmyfood (1)/Maquettes Ohmyfood/maquettes/check_circle_white_24dp (1).svg");
 background-color: #99E2D0;
 position: absolute;
@@ -47,11 +100,11 @@ width: 10%;
 transition:.3s ;
 }
 
-.slide:hover::before{
+.slid:hover::before{
 transform: translateX(-100%);
 }
 
-.slide:hover::after{
+.slie:hover::after{
 transform: translateX(-190%);
 rotate: (1turn);
 }
