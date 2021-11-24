@@ -1,42 +1,12 @@
 @media  all and (min-device-width:768px){
-  main img{
-    width: 50%;
-position: relative;
-right: 20%;
-box-sizing: border-box;
-  }
-.fondBlanc{
-  width: 63%; 
-  position: relative;
-left: 15%;
+
+  body{
+  width: 75%;
+  margin:0 10rem;
+}
+ 
 }
 
-main h2 {
-  margin-right: 50%;
-}
-.nouveau{
-  position: absolute;
-  left:55px;
-  width: 55%;
-}
-nav{
-  width: 30%;
-  }
-  body{
-  width: 50%;
-  margin: 0;
-}
-  main {
-    padding: 0 2rem;
-    margin: 0 2rem;
-    width: 40%;
-  }
-  footer{
-    display: flex;
-    flex-direction: row;
-  }
-}
-  
   body
   {font-family: 'Roboto', sans-serif;
   }
