@@ -32,11 +32,6 @@
   
   
    /*Container*/
-
-   .contaner_boxGreen {
-    content: "Maquettes Ohmyfood (1)/Maquettes Ohmyfood/maquettes/done_outline_white_24dp.svg";
-    color: #99E2D0;
-}
    .container__coeur {
     height: 50px;
     width: 50px;
@@ -60,6 +55,7 @@
     width: 100%;
     background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
     }
+
     .menu__like {
     transition-duration: 0.25s;
     background-color: #f2f2f2;
@@ -74,6 +70,7 @@
     mix-blend-mode: lighten;
     text-shadow: 0px 0px 2px rgb(8, 8, 8);
     }
+
     .container__coeur:hover .menu__like--noBg {
     opacity: 0;
     }
@@ -86,41 +83,6 @@
   padding-top: 1%;
   padding-left: 2%;
   }
-  
-  
-
-  
-  
-  .container_boxGreen:hover{
-     border-radius: 100px;
-     background-color: #99E2D0;
-     color: white;
-     animation-duration: 2s infinite;
-     animation-name: spin;
-  
-     }
-     
-     @keyframes spin {
-         from {
-           transform:rotate(360deg);
-            opacity: 0;
-         }
-       
-         to {
-           transform: rotate(360deg);
-         }
-       }
-     
-       @-webkit-keyframes spin {
-         from {
-           -webkit-transform:rotate(0deg);
-           opacity: 1;
-         }
-       
-         to {
-           -webkit-transform: rotate(360deg);
-         }
-  }   
   
   .container_h3{
   padding-top: 20px;
@@ -138,6 +100,7 @@
   animation-name: verticale;
   animation-direction: normal;
   text-overflow: ellipsis;
+  cursor: pointer;
   }
   
      @keyframes verticale {
@@ -152,13 +115,7 @@
      }
    }
   
-   .container_menu1 {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  }
-  
-  
+   
   .container_menu p{
   display: flex;
   justify-content: space-between;
