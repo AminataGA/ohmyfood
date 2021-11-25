@@ -95,7 +95,6 @@
   width: 85%;
   animation-duration: 5000ms;
   animation-name: verticale;
-  animation-direction: normal;
   text-overflow: ellipsis;
   cursor: pointer;
   }
