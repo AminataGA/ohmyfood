@@ -84,7 +84,7 @@ object-fit: cover;
 
   .coche {
   position: absolute;
-  left:600px;
+  right:100px;
   overflow: hidden;
   width: 100px;
   height:100px; 
