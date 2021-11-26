@@ -84,7 +84,7 @@ object-fit: cover;
 
   .coche {
   position: absolute;
-  right:100px;
+  right:550px;
   overflow: hidden;
   width: 100px;
   height:100px; 
@@ -99,6 +99,7 @@ width: 50px;
 height: 50px;
 background: #99E2D0;
 transition: 1s;
+border-radius: 0px 20px 20px 0px;
 }
 
 .coche:hover #slide {
