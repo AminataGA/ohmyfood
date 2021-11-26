@@ -1,17 +1,17 @@
 @media  all and (min-device-width:768px){
 
   body{
-  width: 75%;
-  margin:0 10rem;
-  display: grid;
-
+  width: 45%;
+  margin: 25%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
  
 }
 
 body
 {font-family: 'Roboto', sans-serif;
-  margin-left: 5%;
 }
 
 h4,h1
@@ -84,7 +84,7 @@ object-fit: cover;
 
   .coche {
   position: absolute;
-  right:550px;
+  right:650px;
   overflow: hidden;
   width: 100px;
   height:100px; 
@@ -105,7 +105,6 @@ border-radius: 0px 20px 20px 0px;
 .coche:hover #slide {
 transition: 1s;
 left: 0px;
-transform:translateX(0deg) turn(1);
 transform:rotate(360deg);
 }
 
@@ -134,7 +133,6 @@ margin-left: 1%;
 width: 85%;
 animation-duration: 4000ms;
 animation-name: verticale;
-text-overflow: ellipsis;
 cursor: pointer;
 }
 
@@ -159,10 +157,7 @@ align-items: center;
 font-size: 35px;
 padding-bottom: 20px;
 padding-right: 40px;
-z-index: 9;
-animation: linear;
-transition-duration: 200ms;
-
+text-overflow: ellipsis;
 }
 
 

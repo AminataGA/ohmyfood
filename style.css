@@ -1,9 +1,6 @@
 @media  all and (min-device-width:768px){
-main img{
-width: 50%;
-position: relative;
-right: 20%;
-box-sizing: border-box;
+body{
+width: 48%;
 }
 
 .fondBlanc{
@@ -15,32 +12,6 @@ left: 15%;
 main h2 {
   margin-right: 50%;
 }
-.nouveau{
-position: absolute;
-left:55px;
-width: 55%;
-}
-
-nav{
-width: 30%;
-}
-
-body{
-width: 48%;
-justify-content: center;
-margin-right: 100%;
-}
-
-main {
-padding: 0 2rem;
-margin: 0 2rem;
-width: 40%;
-}
-
-footer{
-display: flex;
-flex-direction: column;
-  }
 }
 
 /*CSS mobile*/
