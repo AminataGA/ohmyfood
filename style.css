@@ -1,6 +1,17 @@
 @media  all and (min-device-width:768px){
-body{
+body {
 width: 48%;
+
+}
+nav
+{margin:45%;
+margin-top:5%;
+}
+
+header img{
+  margin:45%;
+  margin-top:0;
+  margin-bottom: 0;
 }
 
 .fondBlanc{
