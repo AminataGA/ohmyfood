@@ -1,14 +1,11 @@
-@media  all and (min-device-width:768px){
-
-  body{
-  width: 45%;
-  margin: 25%;
-  margin-top: 0;
-  margin-bottom: 0;
+@media  screen and (max-width:400px){
+  body {
+   margin: 0 2rem;
+    
+  
+  }
 }
 
- 
-}
 
 body
 {font-family: 'Roboto', sans-serif;
@@ -78,38 +75,55 @@ object-fit: cover;
   }
 
 
-  .prix:hover{
+  .prixhover{
   padding-right: 10%;
   }
 
   .coche {
   position: absolute;
-  right:650px;
-  overflow: hidden;
+  right:155px;
   width: 100px;
   height:100px; 
+  overflow: hidden;
+  
 }
 
-#slide {
+#slide{
 content:url("Maquettes Ohmyfood (1)/Maquettes Ohmyfood/maquettes/check_circle_white_24dp (1).svg");
 position: absolute;
-cursor: pointer;
-left: 100px;
-width: 50px;
-height: 50px;
-background: #99E2D0;
-transition: 1s;
+top: 0;
+right: 0;
+transform: translateX(70px);
+transition: 2s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: #99e2d0;
+width: 70%;
+height: 100%;
+
 border-radius: 0px 20px 20px 0px;
+-webkit-box-pack: center;
 }
+
+
+.coche:hover::before{
+  transform: translateX(-100%);
+  }
+.coche:hover::after{
+  transform: translateX(-190%) rotate(1turn);
+  }
+
 
 .coche:hover #slide {
 transition: 1s;
 left: 0px;
-transform:rotate(360deg);
+transform:rotate(1turn);
+
 }
 
 .container{
-background-color: #f2f2f2;
 width: 100%;
 padding-bottom: 5%;
 border-radius: 20px 20px 0px 0px;
@@ -117,7 +131,12 @@ padding-top: 1%;
 padding-left: 2%;
 }
 
-
+.container_bg{
+  background-color: #f2f2f2;
+  position: relative;
+  margin-top: -60px;
+  width: 100%;
+}
   
 .container h3{
 padding-top: 20px;
@@ -175,7 +194,7 @@ margin-bottom: 2%;
 
 .container_clique{
 background:linear-gradient(#ff79da, #9356DC);
-width: 20%;
+width: 50%;
 padding-right: 15%;
 font-size: 35px;
 border-radius: 50px;

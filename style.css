@@ -1,4 +1,4 @@
-@media  all and (min-device-width:768px){
+@media  screen and (max-width:400px){
 body {
 width: 45%;
 
